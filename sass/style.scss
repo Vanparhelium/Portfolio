@@ -1,4 +1,4 @@
-// // Файл обнуляющих стилей
+// Файл обнуляющих стилей
 @import "nullstyle.scss";
 
 body {
@@ -9,8 +9,8 @@ body {
 
 .main__header {
 	margin: 0 auto;
-	max-width: 800px;
-	/*position: relative;*/
+	max-width: 1200px;
+	position: relative;
 }
 
 .no-video .video-container video,
