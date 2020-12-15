@@ -72,6 +72,51 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /*--------------------*/
+@font-face {
+  font-family: "RighteousRegular";
+  src: url("../fonts/Righteous/RighteousRegular.eot");
+  src: url("../fonts/Righteous/RighteousRegular.eot") format("embedded-opentype"), url("../fonts/Righteous/RighteousRegular.woff2") format("woff2"), url("../fonts/Righteous/RighteousRegular.woff") format("woff"), url("../fonts/Righteous/RighteousRegular.ttf") format("truetype"), url("../fonts/Righteous/RighteousRegular.svg#RighteousRegular") format("svg");
+}
+@font-face {
+  font-family: "KaushanScriptRegular";
+  src: url("../fonts/Kaushan_Script/KaushanScriptRegular.eot");
+  src: url("../fonts/Kaushan_Script/KaushanScriptRegular.eot") format("embedded-opentype"), url("../fonts/Kaushan_Script/KaushanScriptRegular.woff2") format("woff2"), url("../fonts/Kaushan_Script/KaushanScriptRegular.woff") format("woff"), url("../fonts/Kaushan_Script/KaushanScriptRegular.ttf") format("truetype"), url("../fonts/Kaushan_Script/KaushanScriptRegular.svg#KaushanScriptRegular") format("svg");
+}
+@font-face {
+  font-family: "BangersRegular";
+  src: url("../fonts/Bangers/BangersRegular.eot");
+  src: url("../fonts/Bangers/BangersRegular.eot") format("embedded-opentype"), url("../fonts/Bangers/BangersRegular.woff2") format("woff2"), url("../fonts/Bangers/BangersRegular.woff") format("woff"), url("../fonts/Bangers/BangersRegular.ttf") format("truetype"), url("../fonts/Bangers/BangersRegular.svg#BangersRegular") format("svg");
+}
+.rig-reg {
+  font-family: "RighteousRegular", sans-serif;
+  font-weight: 400;
+}
+
+.rig-bold {
+  font-family: "RighteousRegular", sans-serif;
+  font-weight: 600;
+}
+
+.kaush-reg {
+  font-family: "KaushanScriptRegular", sans-serif;
+  font-weight: 400;
+}
+
+.kaush-bold {
+  font-family: "KaushanScriptRegular", sans-serif;
+  font-weight: 600;
+}
+
+.bang-reg {
+  font-family: "BangersRegular", sans-serif;
+  font-weight: 400;
+}
+
+.bang-bold {
+  font-family: "BangersRegular", sans-serif;
+  font-weight: 600;
+}
+
 body {
   background-image: url(../img/main-bg.jpg);
   /*background-repeat: no-repeat;*/
@@ -79,9 +124,30 @@ body {
 }
 
 .main__header {
-  margin: 0 auto;
-  max-width: 1200px;
+  display: flex;
+  margin: 3%;
+  width: 20vw;
+  height: 20vw;
+  border: 0.5vw solid #01ff9c;
+  border-radius: 50%;
   position: relative;
+  box-shadow: 0 0 10vw 5vw #01ff9c;
+  text-align: center;
+}
+
+.main__logo {
+  display: inline-block;
+  padding: 10%;
+  width: 0;
+  height: 0;
+  font-family: "KaushanScriptRegular", sans-serif;
+  font-weight: 600;
+  font-size: 3vw;
+  color: #01ff9c;
+}
+.main__logo span {
+  font-size: 2em;
+  color: #01ff01;
 }
 
 .no-video .video-container video,
