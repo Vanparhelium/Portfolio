@@ -132,12 +132,11 @@ body {
   border-radius: 50%;
   position: relative;
   box-shadow: 0 0 10vw 5vw #01ff9c;
-  text-align: center;
 }
 
 .main__logo {
   display: inline-block;
-  padding: 10%;
+  padding: 9%;
   width: 0;
   height: 0;
   font-family: "KaushanScriptRegular", sans-serif;
@@ -148,6 +147,9 @@ body {
 .main__logo span {
   font-size: 2em;
   color: #01ff01;
+}
+.main__logo .first-logo {
+  padding-left: 1em;
 }
 
 .no-video .video-container video,
