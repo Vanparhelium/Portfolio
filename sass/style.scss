@@ -32,37 +32,15 @@
          url('../fonts/Bangers/BangersRegular.svg#BangersRegular') format('svg');
 }
 
-.rig-reg {
-  font-family: 'RighteousRegular', sans-serif;
-  font-weight: 400;
+@font-face {
+    font-family: 'PattayaRegular';
+    src: url('../fonts/Pattaya/PattayaRegular.eot');
+    src: url('../fonts/Pattaya/PattayaRegular.eot') format('embedded-opentype'),
+         url('../fonts/Pattaya/PattayaRegular.woff2') format('woff2'),
+         url('../fonts/Pattaya/PattayaRegular.woff') format('woff'),
+         url('../fonts/Pattaya/PattayaRegular.ttf') format('truetype'),
+         url('../fonts/Pattaya/PattayaRegular.svg#PattayaRegular') format('svg');
 }
-
-.rig-bold {
-  font-family: 'RighteousRegular', sans-serif;
-  font-weight: 600;
-}
-
-.kaush-reg {
-  font-family: 'KaushanScriptRegular', sans-serif;
-  font-weight: 400;
-}
-
-.kaush-bold {
-  font-family: 'KaushanScriptRegular', sans-serif;
-  font-weight: 600;
-}
-
-.bang-reg {
-  font-family: 'BangersRegular', sans-serif;
-  font-weight: 400;
-}
-
-.bang-bold {
-  font-family: 'BangersRegular', sans-serif;
-  font-weight: 600;
-}
-
-
 
 body {
 	background-image: url(../img/main-bg.jpg);
@@ -78,11 +56,10 @@ body {
   border: 0.5vw solid #01ff9c;
   border-radius: 50%;  
 	position: relative;   
-  box-shadow: 0 0 10vw 5vw #01ff9c;  
+  box-shadow: 0 0 10vw 5vw #01ff9c;    
 }
 
 .main__logo {
-
   display: inline-block;   
   padding: 9%;
   width: 0;
@@ -91,15 +68,43 @@ body {
   font-weight: 600;
   font-size: 3vw; 
   color: #01ff9c;
+  text-shadow: 0vw 0vw 2vw #f904f1;
   span {    
     font-size: 2em;
     color: #01ff01;
+
   }
   .first-logo {   
     padding-left: 1em;
   }
 }
 
+.wow.rollIn {
+    visibility: visible;
+    animation-delay: 0.5s;
+    animation-name: rollIn;
+}
+
+.main-text {
+  position: relative;
+ // margin-right: 10vw;
+  float: right;
+  padding: 5px;
+  font-family: 'KaushanScriptRegular' , sans-serif;  
+  font-size: 5vw; 
+  color: black;
+  text-shadow: 0vw 0vw 2vw #ffffff;
+  perspective: 40vw;  
+}
+
+.text {  
+  transform: rotateY(-60deg);
+  span {
+    font-family: 'BangersRegular' , sans-serif;    
+    font-size: 3em;
+    color: #05090b;
+  }
+}
 
 
  // видеофон
