@@ -4,40 +4,34 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Иван Тищенко</title>
-	<link rel="stylesheet" href="css/style.css">
+	<script src="js/wow.min.js"></script>
 	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-	<header id="main">
-		
-			   <div class="video-container">
-                    <div class="filter"></div>
-                   <video autoplay loop muted playsinline src="video-bg/VideoEdit.mp4" class="fillWidth"></video>
-                   <div class="poster hidden">
-                     <!-- <img src="img/main-bg.jpg" alt=""> -->
-                   </div>
-                </div>
-                
-		<div class="container">
-			<div class="wow rollIn row main__header">
-				<div class="col main__logo">
-					<p class="first-logo"><span>I</span>van</p>
-					<p><span>T</span>ishchenko</p>
-				</div>
-			</div> <!-- /main__heder -->
-			<div class="row main-text">
-				<div class="text"><h1 class="wow tada"><span>Web </span>developer</h1></div>
-			</div>
-		</div>
-		<div class="main__body">
-			
-		</div> <!-- /main__body -->
-		<div class="main__footer">
-			
-		</header> <!-- /main__footer -->
-	</div> <!-- /main -->
+  <header class="header">
+    <div class="container">
+      <div class="header__container">
+        <div class="video__container">
+          <div class="filter"></div>
+                <video autoplay loop muted playsinline src="video-bg/VideoEdit.mp4" class="fillWidth"></video>
+            <div class="poster hidden">
+              <!-- <img src="img/main-bg.jpg" alt=""> -->
+            </div>
+        </div>
+        <div class="wow rollIn header__logo">
+          <div class="main__logo">
+            <p class="first-logo"><span>I</span>van</p>
+            <p><span>T</span>ishchenko</p>
+          </div>
+        </div>
+        <div class="header__title">
+            <h2 class="wow tada"><span>Web </span>developer</h2>
+      </div>
+      </div>
+    </div>
+  </header>
 
-	<script src="js/wow.min.js"></script>
 	<script>
       new WOW().init();
     </script>
